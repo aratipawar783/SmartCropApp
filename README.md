@@ -84,8 +84,7 @@ build.gradle (project)
 ---
 
 ****PPT ****
-https://docs.google.com/presentation/d/1JUvjJKldEyify1FZ_9mtUfHcbh6WFHJD/editusp=sharing&ouid=108431112574969640805&rtpof=true&sd=true
-
+https://docs.google.com/presentation/d/1JUvjJKldEyify1FZ_9mtUfHcbh6WFHJD/edit?usp=drive_link&ouid=108431112574969640805&rtpof=true&sd=true
 ## ▶️ How to Run
 
 1. Open project in **Android Studio**  
