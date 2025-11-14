@@ -1,0 +1,117 @@
+plugins {
+    alias(libs.plugins.android.application)
+
+    id 'com.google.gms.google-services'
+    alias(libs.plugins.google.android.libraries.mapsplatform.secrets.gradle.plugin)
+}
+
+android {
+    namespace 'com.example.smartcropapp'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.example.smartcropapp"
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    buildFeatures {
+        viewBinding true
+        mlModelBinding true
+    }
+}
+
+dependencies {
+
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    implementation libs.firebase.auth
+    implementation libs.play.services.location
+    implementation libs.cronet.embedded
+    implementation libs.firebase.firestore
+    implementation libs.tensorflow.lite.metadata
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+    implementation 'androidx.preference:preference:1.2.1'
+    implementation platform('com.google.firebase:firebase-bom:34.2.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.3'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    // JSON Parsing
+    implementation 'com.google.code.gson:gson:2.11.0'
+
+    // Retrofit for API calls
+    implementation 'com.squareup.retrofit2:retrofit:2.11.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.11.0'
+
+    // OkHttp for networking
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.12.0'
+
+    // Glide for weather icons (optional, if you show images like sun/cloud/rain icons)
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.16.0'
+
+    // Lifecycle & ViewModel (optional but recommended for clean architecture)
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.8.6'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.6'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    implementation 'com.google.mlkit:translate:17.0.2'   // For translation
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.2'
+    implementation 'org.tensorflow:tensorflow-lite:2.12.0'               // use latest compatible version
+    implementation 'org.tensorflow:tensorflow-lite-support:0.4.0'      // for TensorImage, TensorProcessor etc (optional)
+    implementation 'org.tensorflow:tensorflow-lite-gpu:2.12.0'
+    implementation 'com.itextpdf:itextg:5.5.10'// optional (if you want GPU acceleration)
+    // Image loading / util (optional)
+    implementation 'com.squareup.picasso:picasso:2.8'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'androidx.recyclerview:recyclerview:1.3.2'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    
+        implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+        implementation "androidx.work:work-runtime:2.9.0"
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'androidx.recyclerview:recyclerview:1.3.0'
+    implementation 'com.google.android.material:material:1.9.0'
+
+        implementation 'com.squareup.okhttp3:okhttp:4.10.0'
+        implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    
+
+
+
+// For graphs
+
+
+
+
+}

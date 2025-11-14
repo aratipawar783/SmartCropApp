@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.smartcropapp">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/cropsplash1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/cropsplash1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartCropApp"
+        tools:targetApi="31">
+        <service android:name=".notifications.WeatherAlertsService"
+            android:exported="false"/>
+        <activity
+            android:name=".feedback.ViewFeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".marketprice.MarketActivity"
+            android:exported="false" />
+        <activity
+            android:name=".marketprice.WebViewActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".soil.PdfViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".merchant.Feed1Activity"
+            android:exported="false" />
+
+        <activity
+            android:name=".merchant.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".merchant.FollowersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".merchant.CommentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".merchant.LikesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".merchant.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".weather.ForecastDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".soil.SoilReportActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAY5CB8Fr9TMRS-HHf0bAXxT_Mli6A3Sog" />
+
+        <activity
+            android:name=".weather.MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <receiver
+            android:name=".userprofile.SmsReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".userprofile.PasswordResetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userprofile.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userprofile.OTPActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userprofile.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userprofile.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".weather.WeatherActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userprofile.UserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".soil.SoilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pest.PestDetectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".notifications.NotificationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".merchant.FarmerMerchantActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feedback.FeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DashBoardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".merchant.FeedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".merchant.CreatePostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".merchant.MessageActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

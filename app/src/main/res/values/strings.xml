@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">SmartCropApp</string>
+    <string-array name="country_codes">
+        <item>+91</item> <!-- India -->
+        <item>+1</item>  <!-- USA -->
+        <item>+44</item> <!-- UK -->
+        <item>+971</item> <!-- UAE -->
+        <item>+61</item> <!-- Australia -->
+    </string-array>
+    <string-array name="languages">
+        <item>English</item>
+        <item>Hindi</item>
+        <item>Marathi</item>
+        <item>Telugu</item>
+        <item>Tamil</item>
+        <item>Kannada</item>
+        <item>Gujarati</item>
+        <item>Punjabi</item>
+        <item>Malayalam</item>
+        <item>Bengali</item>
+        <item>Urdu</item>
+        <item>Odia</item>
+    </string-array>
+
+    <string name="title_activity_maps">MapsActivity</string>
+
+</resources>

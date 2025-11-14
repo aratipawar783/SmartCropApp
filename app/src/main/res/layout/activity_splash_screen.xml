@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Welcome to Smart Crop Advisory System for Small and Marginal Farmers!"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="10pt"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/splashLogo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:contentDescription="App Logo"
+        android:src="@drawable/cropsplash1" />
+</LinearLayout>

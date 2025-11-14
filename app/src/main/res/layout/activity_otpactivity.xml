@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F1F8E9">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_otp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#31A934"
+        android:layout_marginTop="30dp"
+        app:title="Verify OTP"
+        app:titleTextColor="@android:color/white" />
+
+    <!-- Image Illustration -->
+    <ImageView
+        android:id="@+id/imgOtp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/otp"
+    android:layout_gravity="center"
+    android:layout_marginTop="32dp"
+    android:contentDescription="OTP verification" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvOtpTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter OTP"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
+
+    <!-- Instruction -->
+    <TextView
+        android:id="@+id/tvOtpDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="We’ve sent a 6-digit OTP to your phone number. Please enter it below to proceed."
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:padding="8dp" />
+
+    <!-- OTP Input Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter OTP"
+        android:layout_marginTop="24dp"
+        app:boxStrokeColor="#31A934"
+        app:hintTextColor="@color/white">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etOtp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:inputType="number"
+            android:maxLength="6" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/tvCountdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:text="Resend available in 30s"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp" />
+
+
+
+    <!-- Verify OTP Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnVerifyOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify OTP"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#0B0D0B"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:textColor="@android:color/white"
+        app:cornerRadius="24dp"
+        android:layout_gravity="center" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnResendOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resend OTP"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#0B0D0B"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        app:cornerRadius="24dp"
+        android:layout_gravity="center" />
+
+</LinearLayout>

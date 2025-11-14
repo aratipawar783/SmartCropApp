@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F4F6">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Toolbar -->
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2E7D32"
+            android:layout_marginTop="30dp"
+            android:elevation="4dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetLeft="0dp">
+
+            <!-- Profile Picture -->
+            <ImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/userprofile"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_background"
+                android:layout_marginStart="12dp" />
+
+            <!-- Search View -->
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:queryHint="Search farmers, traders..."
+                android:layout_marginStart="12dp"
+                android:iconifiedByDefault="false"
+                app:queryBackground="@android:color/transparent"
+                />
+        </com.google.android.material.appbar.MaterialToolbar>
+
+        <!-- Feed Container -->
+        <LinearLayout
+            android:id="@+id/feedContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Post Card 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/postProfile1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/userprofile"
+                    android:background="@drawable/circle_background"
+                    android:scaleType="centerCrop"
+                    android:layout_marginEnd="8dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvName1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Prasad Pawar"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="#111" />
+
+                    <TextView
+                        android:id="@+id/tvTime1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2h ago"
+                        android:textSize="12sp"
+                        android:textColor="#666" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Post text -->
+            <TextView
+                android:id="@+id/tvPostText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This season’s  crop is ready 🌾"
+                android:textSize="15sp"
+                android:layout_marginTop="8dp"
+                android:textColor="#333" />
+
+            <!-- Post image -->
+            <ImageView
+                android:id="@+id/imgPost1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/drakshe"
+                android:layout_marginTop="6dp"
+                android:background="#EEE" />
+
+            <!-- Like / Comment / Share -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tvLike1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="👍 Like"
+                    android:textColor="#1565C0"
+                    android:textSize="14sp"
+                    android:drawablePadding="4dp" />
+
+                <TextView
+                    android:id="@+id/tvComment1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="💬 Comment"
+                    android:textColor="#444"
+                    android:textSize="14sp"
+                    android:drawablePadding="4dp" />
+
+                <TextView
+                    android:id="@+id/tvShare1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🔗 Share"
+                    android:textColor="#444"
+                    android:textSize="14sp"
+                    android:drawablePadding="4dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/postProfile2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/userprofile"
+                    android:background="@drawable/circle_background"
+                    android:scaleType="centerCrop"
+                    android:layout_marginEnd="8dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvName2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Farmer Sanjay"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="#111" />
+
+                    <TextView
+                        android:id="@+id/tvTime2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2h ago"
+                        android:textSize="12sp"
+                        android:textColor="#666" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Post text -->
+            <TextView
+                android:id="@+id/tvPostText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This season’s  crop is ready 🌾"
+                android:textSize="15sp"
+                android:layout_marginTop="8dp"
+                android:textColor="#333" />
+
+            <!-- Post image -->
+            <ImageView
+                android:id="@+id/imgPost2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/makka"
+                android:layout_marginTop="6dp"
+                android:background="#EEE" />
+
+            <!-- Like / Comment / Share -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tvLike2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="👍 Like"
+                    android:textColor="#1565C0"
+                    android:textSize="14sp"
+                    android:drawablePadding="4dp" />
+
+                <TextView
+                    android:id="@+id/tvComment2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="💬 Comment"
+                    android:textColor="#444"
+                    android:textSize="14sp"
+                    android:drawablePadding="4dp" />
+
+                <TextView
+                    android:id="@+id/tvShare2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🔗 Share"
+                    android:textColor="#444"
+                    android:textSize="14sp"
+                    android:drawablePadding="4dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/postProfile3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/userprofile"
+                    android:background="@drawable/circle_background"
+                    android:scaleType="centerCrop"
+                    android:layout_marginEnd="8dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvName3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Farmer Amol Pawar"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="#111" />
+
+                    <TextView
+                        android:id="@+id/tvTime3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2h ago"
+                        android:textSize="12sp"
+                        android:textColor="#666" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Post text -->
+            <TextView
+                android:id="@+id/tvPostText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This season’s  crop is ready 🌾"
+                android:textSize="15sp"
+                android:layout_marginTop="8dp"
+                android:textColor="#333" />
+
+            <!-- Post image -->
+            <ImageView
+                android:id="@+id/imgPost3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dalimb"
+                android:layout_marginTop="6dp"
+                android:background="#EEE" />
+
+            <!-- Like / Comment / Share -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tvLike3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="👍 Like"
+                    android:textColor="#1565C0"
+                    android:textSize="14sp"
+                    android:drawablePadding="4dp" />
+
+                <TextView
+                    android:id="@+id/tvComment3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="💬 Comment"
+                    android:textColor="#444"
+                    android:textSize="14sp"
+                    android:drawablePadding="4dp" />
+
+                <TextView
+                    android:id="@+id/tvShare3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🔗 Share"
+                    android:textColor="#444"
+                    android:textSize="14sp"
+                    android:drawablePadding="4dp" />
+            </LinearLayout>
+            </LinearLayout>
+
+
+        <!-- Floating Create Post Button -->
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fabCreatePost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="16dp"
+            android:text="Create Post"
+            android:textColor="@android:color/white"
+            app:backgroundTint="@color/black"
+            app:iconTint="@android:color/white"
+            app:iconPadding="8dp" />
+
+    </RelativeLayout>
+</ScrollView>

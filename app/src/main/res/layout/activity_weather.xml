@@ -1,0 +1,112 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F8E9"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/cloud">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_forgot"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#2E7D32"
+            android:layout_marginTop="40dp"
+            app:title=" Weather"
+            app:titleTextColor="@android:color/white" />
+
+        <!-- Current Weather Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="8dp"
+            android:clipToPadding="false"
+            android:background="@drawable/card_gradient"
+            android:clipChildren="false">
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/purple_500" />
+
+            <TextView
+                android:id="@+id/tvTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="28°C"
+                android:textSize="32sp"
+                android:textColor="@color/teal_700"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCondition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sunny"
+                android:textSize="16sp"
+                android:textColor="#555555" />
+
+            <TextView
+                android:id="@+id/tvHumidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Humidity: 45%"
+                android:textSize="14sp"
+                android:textColor="#757575" />
+        </LinearLayout>
+
+        <!-- Forecast Horizontal RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerForecast"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="8dp"
+            android:clipChildren="false"
+            android:clipToPadding="false" />
+
+        <!-- LineChart for selected day -->
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/lineChart"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/white"
+            android:elevation="4dp"
+            android:padding="8dp" />
+
+        <!-- Show My Location Button -->
+        <Button
+            android:id="@+id/btnShowLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show My Location"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/black"
+            android:textColor="#FFFFFF" />
+
+        <!-- Alert -->
+        <TextView
+            android:id="@+id/tvAlert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚠️ Weather Alerts"
+            android:visibility="invisible"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:background="#D32F2F"
+            android:gravity="center"
+            android:layout_marginTop="12dp"/>
+    </LinearLayout>
+</ScrollView>

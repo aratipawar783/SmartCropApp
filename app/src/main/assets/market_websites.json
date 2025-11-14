@@ -1,0 +1,132 @@
+[
+  {
+    "name": "ICAR",
+    "url": "https://icar.org.in/",
+    "description": "India’s top agri research org.",
+    "logo": "iari.png",
+    "color": "#ECEFF1",
+    "font": "lora_bold.ttf"
+  },
+  {
+    "name": "Agmarknet",
+    "url": "https://www.agmarknet.gov.in/",
+    "description": "Daily mandi prices & arrivals (Govt. of India).",
+    "logo": "agmarknet.png",
+    "color": "#E8F5E9",
+    "font": "roboto_bold.ttf"
+  },
+  {
+    "name": "USDA",
+    "url": "https://www.usda.gov/",
+    "description": "United States Department of Agriculture.",
+    "logo": "usda.png",
+    "color": "#E1F5FE",
+    "font": "open_sans_bold.ttf"
+  },
+  {
+    "name": "Krishi Jagran",
+    "url": "https://krishijagran.com/",
+    "description": "India's leading agri news magazine.",
+    "logo": "krishi_jagran.png",
+    "color": "#FFF3E0",
+    "font": "poppins_medium.ttf"
+  },
+  {
+    "name": "FarmProgress",
+    "url": "https://www.farmprogress.com/",
+    "description": "Global agri news & markets.",
+    "logo": "farmer_progress.png",
+    "color": "#E3F2FD",
+    "font": "lato_regular.ttf"
+  },
+  {
+    "name": "TNAU Agritech",
+    "url": "https://agritech.tnau.ac.in/",
+    "description": "Crop & technology advisories (TNAU).",
+    "logo": "tnau.png",
+    "color": "#FCE4EC",
+    "font": "montserrat_semibold.ttf"
+  },
+  {
+    "name": "Farmers' Portal",
+    "url": "https://farmer.gov.in/",
+    "description": "Govt. schemes, advisories, services.",
+    "logo": "farmer_portal.png",
+    "color": "#FFFDE7",
+    "font": "nunito_bold.ttf"
+  },
+  {
+    "name": "APEDA",
+    "url": "https://apeda.gov.in/",
+    "description": "Exports & processed agri products.",
+    "logo": "apeda.png",
+    "color": "#E0F7FA",
+    "font": "poppins_bold.ttf"
+  },
+  {
+    "name": "Coffee Board",
+    "url": "https://coffeeboard.gov.in/",
+    "description": "Coffee stats & services.",
+    "logo": "coffee_board.png",
+    "color": "#F3E5F5",
+    "font": "roboto_medium.ttf"
+  },
+
+  {
+    "name": "FAO",
+    "url": "https://www.fao.org/",
+    "description": "Food and Agriculture Organization of the UN.",
+    "logo": "fao.png",
+    "color": "#FFF9C4",
+    "font": "merriweather_bold.ttf"
+  },
+
+  {
+    "name": "NABARD",
+    "url": "https://www.nabard.org/",
+    "description": "Agriculture and rural development bank (India).",
+    "logo": "nabard.png",
+    "color": "#DCEDC8",
+    "font": "raleway_medium.ttf"
+  },
+  {
+    "name": "AgriWatch",
+    "url": "https://www.agriwatch.com/",
+    "description": "Agri commodities market intelligence.",
+    "logo": "agriwatch.png",
+    "color": "#FFECB3",
+    "font": "ubuntu_bold.ttf"
+  },
+  {
+    "name": "ICRISAT",
+    "url": "https://www.icrisat.org/",
+    "description": "International Crops Research Institute for Semi-Arid Tropics.",
+    "logo": "icrsat.png",
+    "color": "#E0F2F1",
+    "font": "nunito_medium.ttf"
+  },
+  {
+    "name": "World Bank Agriculture",
+    "url": "https://www.worldbank.org/en/topic/agriculture",
+    "description": "Global agriculture and rural development projects.",
+    "logo": "worldbank.png",
+    "color": "#F1F8E9",
+    "font": "roboto_slab_bold.ttf"
+  },
+  {
+    "name": "India Agri Exchange",
+    "url": "https://www.indiaagriexchange.com/",
+    "description": "Agri trade and market information platform.",
+    "logo": "india_agri_exchange.png",
+    "color": "#FFF8E1",
+    "font": "poppins_regular.ttf"
+  },
+  {
+    "name": "ICAR-Crop Science",
+    "url": "https://iari.res.in/",
+    "description": "Indian Agricultural Research Institute (IARI).",
+    "logo": "iari.png",
+    "color": "#FBE9E7",
+    "font": "lora_regular.ttf"
+  }
+]

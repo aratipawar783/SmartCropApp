@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView android:id="@+id/title" android:layout_weight="2" android:layout_width="0dp" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/market" android:layout_weight="2" android:layout_width="0dp" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/price" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/date" android:layout_weight="2" android:layout_width="0dp" android:layout_height="wrap_content"/>
+</LinearLayout>

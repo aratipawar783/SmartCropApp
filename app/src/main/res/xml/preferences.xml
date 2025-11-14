@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="language"
+        android:title="Select Language"
+        android:defaultValue="en"
+        android:entries="@array/language_names"
+        android:entryValues="@array/language_values"
+        android:summary="Choose your preferred language"/>
+
+    <SwitchPreferenceCompat
+        android:key="notifications"
+        android:title="Enable Notifications"
+        android:defaultValue="true"
+        android:summary="Get weather and pest alerts"/>
+
+    <SwitchPreferenceCompat
+        android:key="dark_mode"
+        android:title="Dark Mode"
+        android:defaultValue="false"
+        android:summary="Use dark theme for the app"/>
+
+</PreferenceScreen>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp" android:padding="8dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/imgUser" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/soil_black"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp">
+                <TextView
+                    android:layout_height="48dp"
+                    android:layout_width="match_parent" android:id="@+id/tvUserName" android:text="Name" android:textStyle="bold"/>
+                <TextView
+                    android:layout_height="48dp"
+                    android:layout_width="match_parent" android:id="@+id/tvLocation" android:text="Location" android:textSize="12sp"/>
+            </LinearLayout>
+            <Button android:id="@+id/btnConnect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Connect" android:layout_gravity="center_vertical" />
+        </LinearLayout>
+        <ImageView android:id="@+id/imgPost" android:layout_width="match_parent" android:layout_height="200dp" android:scaleType="centerCrop" android:layout_marginTop="8dp" android:src="@drawable/cloud"/>
+        <TextView android:id="@+id/tvCaption" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+        <TextView android:id="@+id/tvPrice" android:layout_width="match_parent" android:layout_height="wrap_content" android:textStyle="bold"/>
+        <TextView android:id="@+id/tvLikeCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 likes" android:layout_marginTop="6dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+            <Button android:id="@+id/btnLike" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Like"/>
+            <Button android:id="@+id/btnComment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Comment" android:layout_marginLeft="8dp"/>
+            <Button android:id="@+id/btnSend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Send" android:layout_marginLeft="8dp"/>
+            <Button android:id="@+id/btnMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Message" android:layout_marginLeft="8dp"/>
+            <Button android:id="@+id/btnCall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Call" android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

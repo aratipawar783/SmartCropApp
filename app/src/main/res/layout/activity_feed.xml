@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+
+  <LinearLayout android:layout_width="match_parent" android:layout_height="56dp" android:orientation="horizontal" android:padding="8dp" android:background="?attr/colorPrimary">
+    <ImageView android:id="@+id/btnProfile" android:layout_width="44dp" android:layout_height="44dp" android:src="@drawable/userprofile" android:scaleType="centerCrop" android:layout_marginRight="8dp"/>
+    <EditText android:id="@+id/etSearch" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:hint="Search posts, farmers..." android:padding="8dp"/>
+    <Button android:id="@+id/btnCreate" android:layout_width="wrap_content" android:layout_height="48dp" android:text="Create"/>
+  </LinearLayout>
+
+  <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerFeed" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>
