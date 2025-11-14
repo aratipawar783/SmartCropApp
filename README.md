@@ -114,4 +114,7 @@ https://docs.google.com/presentation/d/1JUvjJKldEyify1FZ_9mtUfHcbh6WFHJD/edit?us
 - IMD Weather Data  
 - Agmarknet  
 - Bhuvan ISRO  
-- College / Mentor  
+- College / Mentor
+
+  ## Video Link
+  https://drive.google.com/file/d/1ffLLNdNkCPTOfWLvGzOi046s5GtFyHAY/view?usp=sharing
